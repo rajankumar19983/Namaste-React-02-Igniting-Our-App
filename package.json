@@ -1,0 +1,29 @@
+{
+  "name": "namaste-react-02-igniting-our-app",
+  "version": "1.0.0",
+  "description": "This is a live course",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajankumar19983/Namaste-React-02-Igniting-Our-App.git"
+  },
+  "author": "Rajan Choudhary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajankumar19983/Namaste-React-02-Igniting-Our-App/issues"
+  },
+  "homepage": "https://github.com/rajankumar19983/Namaste-React-02-Igniting-Our-App#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browsersList": [
+    "Last 2 versions"
+  ]
+}
