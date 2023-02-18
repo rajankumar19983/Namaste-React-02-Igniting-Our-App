@@ -22,3 +22,89 @@ We removed the react and react-dom CDNs and installed them using npm and run our
 We bundled our code using the command "npx parcel build index.html"
 
 ## --------------------ASSIGNMENT--------------------
+
+### 1. What is NPM?
+
+NPM is a package manager for the JavaScript programming language maintained by npm Inc. NPM is the default package manager for the JavaScript runtime environment 'Node.js'. It consists of a command line client, also called npm, and an online database of public and paid-for private packages, called the npm registry. It basically manages dependencies for our code.
+
+##
+
+### 2. What is Parcel/Webpack? Why do we need it?
+
+Parcel and webpack are the bundlers used mostly for JavaScript or Typescript code that helps you to minify, clean, and make your code compact so that it becomes easier to send a request or receive the response from the server when it usually takes you to transfer multiple files without using any bundler for loading the page of your application.
+Along with that both bundlers parcel and webpack remove the unnecessary comments, new lines, any kind of block delimiters, and white spaces while the functionality of the code remains unchanged.
+
+##
+
+### 3. What is .parcel-cache?
+
+cache folder (or .parcel-cache in parcel v2) stores information about your project when parcel builds it, so that when it rebuilds, it doesn't have to re-parse and re-analyze everything from scratch. It's a key reason why parcel can be so fast in development mode.
+
+##
+
+### 4. What is npx?
+
+The npx stands for Node Package Execute and it comes with the npm, when you installed npm above 5.2.0 version then automatically npx will installed. It is an npm package runner that can execute any package that you want from the npm registry without even installing that package.
+
+##
+
+### 5. What is the difference between dependencies and devDependencies?
+
+Dependency is an object that contains the library, which your project requires for production environments and functioning effectively.
+devDependencies are those packages in the package. json file that you need only for project development purposes.
+
+##
+
+### 6. What is Tree Shaking?
+
+Tree shaking is a term commonly used within a JavaScript context to describe the removal of dead code.
+It relies on the import and export statements to detect if code modules are exported and imported for use between JavaScript files.
+In modern JavaScript applications, we use module bundlers (e.g., webpack or Parcel) to automatically remove dead code when bundling multiple JavaScript files into single files. This is important for preparing code that is production ready, for example with clean structures and minimal file size.
+
+##
+
+### 7. What is Hot Module Replacement?
+
+Hot Module Replacement (HMR) exchanges, adds, or removes modules while an application is running, without a full reload. This can significantly speed up development in a few ways: Retain application state which is lost during a full reload. Save valuable development time by only updating what's changed.
+
+##
+
+### 8. List down you favourite 5 superpowers of parcel and describe any 3 of them in your own words.
+
+```
+1. Hot Module Replacement :- When you make a change, Parcel automatically updates your code in the browser – no page reload necessary!
+
+2. Diagnostics :- If you make an error in your code or configuration, Parcel displays beautiful diagnostics in your terminal and in the browser.
+Every error includes a syntax highlighted code frame pointing to the exact location where the error occurred, along with hints about how to fix the issue.
+Many diagnostics even include a documentation link where you can learn more.
+
+3. Tree shaking :- Parcel supports tree-shaking both ES modules and CommonJS out of the box! It statically analyzes the imports and exports of each module, and removes everything that isn't used.
+
+4. Minification :- Parcel includes minifiers for JavaScript, CSS, HTML, and SVG out of the box! Just run parcel build index.html, and your whole application will be built and optimized automatically.
+
+5. Content hashing :- Parcel automatically includes content hashes in the names of all output files. This enables long-term browser caching, because the output is guaranteed not to change unless the name does.
+```
+
+##
+
+### 9. What is .gitignore? What should we add and not add into it?
+
+##
+
+### 10. What is the difference between package,json and package-lock.json?
+
+##
+
+### 11. Why should I not modify package-lock.json?
+
+##
+
+### 12. What is node-modules? It is good idea to push that on git?
+
+##
+
+### 13. What is dist folder?
+
+##
+
+### 14. What are browserlists?
