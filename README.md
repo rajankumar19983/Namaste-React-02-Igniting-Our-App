@@ -89,22 +89,41 @@ Many diagnostics even include a documentation link where you can learn more.
 
 ### 9. What is .gitignore? What should we add and not add into it?
 
+The . gitignore file tells Git which files to ignore when committing your project to the GitHub repository. gitignore is located in the root directory of your repo.
+
+Any file that can be re-created on the server (like node_modules, dist, large media files etc.) should be added to .gitignore.
+Files like package.json, package-lock.json, our code files should not be added into .gitignore.
+
 ##
 
-### 10. What is the difference between package,json and package-lock.json?
+### 10. What is the difference between package.json and package-lock.json?
+
+Package.json is a list of all the dependencies of a project (among other things) that need to be downloaded for the project. This includes version info for what needs to be downloaded.
+
+The package.lock.json is generated from this, and lists the dependency tree that was generated after an npm install. This allows future devs and automated systems to download the exact same dependencies as the project. It also allows you to go “back in time” to past versions of the dependency tree without actually committing the node_modules folder.
 
 ##
 
 ### 11. Why should I not modify package-lock.json?
 
+It is a generated file and is not designed to be manually edited. Its purpose is to track the entire tree of dependencies (including dependencies of dependencies) and the exact version of each dependency. You should commit package-lock. json to your code repository.
+
 ##
 
 ### 12. What is node-modules? It is good idea to push that on git?
+
+In simple terms, a module is a piece of reusable JavaScript code. It could be a .js file or a directory containing .js files. You can export the content of these files and use them in other files.
+
+Modules help developers adhere to the DRY (Don't Repeat Yourself) principle in programming. They also help to break down complex logic into small, simple, and manageable chunks.
 
 ##
 
 ### 13. What is dist folder?
 
+The /dist folder contains the minimized version of the source code. The code present in the /dist folder is actually the code which is used on production web applications. Along with the minified code, the /dist folder also comprises of all the compiled modules that may or may not be used with other systems.
+
 ##
 
 ### 14. What are browserlists?
+
+Browserslist is a tool that allows specifying which browsers should be supported in your frontend app by specifying "queries" in a config file.
